@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(236, 239, 241);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container >div {
+    margin-top: 5px;
+}
