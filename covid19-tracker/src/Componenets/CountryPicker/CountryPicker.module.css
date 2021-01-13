@@ -1,0 +1,11 @@
+.formControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 3% 0 !important;
+}
+
+.formControl h5 {
+  margin-top: 10px !important;
+}

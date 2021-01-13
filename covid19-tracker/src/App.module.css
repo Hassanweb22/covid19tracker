@@ -9,6 +9,18 @@ body {
   flex-direction: column;
 }
 
-.container >div {
-    margin-top: 5px;
+.container > div {
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 300px;
+  margin: 3px auto;
+}
+
+@media screen and (max-width: 450px) {
+  .logo img {
+    width: 250px;
+    margin: 4px auto;
+  }
 }

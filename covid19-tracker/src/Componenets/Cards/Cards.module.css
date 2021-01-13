@@ -1,5 +1,12 @@
 .container {
-    margin-top: 30px !important;
+  margin-top: 30px !important;
+  color: #3333ff52;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 20px !important;
+  }
 }
 
 .card {
@@ -12,6 +19,10 @@
 
 .infected {
   border-bottom: 8px solid rgba(0, 0, 255, 0.658);
+}
+
+.colorInfected span {
+  color: rgba(255, 0, 0, 0.603);
 }
 .recovered {
   border-bottom: 8px solid rgba(0, 128, 0, 0.589);
