@@ -13,7 +13,7 @@ export default function Charts({ data, country }) {
         let fetchAPI = async () => {
             setdailydata(await fetchDailyData())
         }
-        
+
         fetchAPI()
     }, [])
 
@@ -23,9 +23,10 @@ export default function Charts({ data, country }) {
 
     let barChart = (data.confirmed) ?
         < Bar
+            height={160}
             data={
                 {
-                    labels: [`Covid-19 Cases`],
+                    labels: [`Covid Cases In ${country}`],
                     datasets: [
                         {
                             label: "Infetcted",
@@ -64,6 +65,7 @@ export default function Charts({ data, country }) {
                     data: dailydata.map((daily) => daily.confirmed),
                     label: "Infected",
                     borderColor: "#3333ff",
+                    borderDash:["'"],
                 },
                 {
                     data: dailydata.map((daily) => daily.deaths),
